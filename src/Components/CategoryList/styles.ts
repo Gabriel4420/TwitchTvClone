@@ -45,6 +45,16 @@ import colors from '../../styles/colors';
     height:9px;
     border-radius:4.5px;
   `
+  export const RedCircleStream = styled.View`
+  background: ${colors.red};
+  width:9px;
+  height:9px;
+  border-radius:4.5px;
+  
+  top:58px;
+  left:-10px;
+  bottom:0;
+  `
 
   export const Info = styled.Text`
     margin-left:4px;
@@ -53,4 +63,6 @@ import colors from '../../styles/colors';
     font-family:roboto_500;
   
   `
+
+
 

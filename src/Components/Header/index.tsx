@@ -1,16 +1,28 @@
-import React from 'react';
+import React,{ReactNode} from 'react';
 import { Feather, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 
 import colors from '../../styles/colors';
 
-import { Container, Avatar, OnlineStatus,RightSide, Button  } from './styles';
+const img = '../../images/sasuke.gif'; 
 
-const Header = () => {
+import { Container,TextSessionNamed, Avatar, PhotoAvatar, OnlineStatus,RightSide, Button  } from './styles';
+
+interface nameProps {
+  children: string
+}
+
+
+const Header = ({children}:nameProps) => {
+  
+
   return (
     <Container>
-     <Avatar>
+     <Avatar >
+       <PhotoAvatar source={require(img)}/>
        <OnlineStatus />
      </Avatar>
+
+     <TextSessionNamed children={children} />
 
      <RightSide>
 
