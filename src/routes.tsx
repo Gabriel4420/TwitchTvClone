@@ -6,6 +6,7 @@ import Following from './pages/Following';
 import ComingSoon from './pages/ComingSoon';
 import {Ionicons, MaterialCommunityIcons} from '@expo/vector-icons';
 import colors from './styles/colors';
+
 const { Navigator, Screen } = createBottomTabNavigator();
 
 const Routes: React.FC = () => (

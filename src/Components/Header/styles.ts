@@ -7,8 +7,6 @@ export const TextSessionNamed = styled.Text`
     color:${colors.green};
     font-family:roboto_500;
     margin-left:-60px;
-    
-
     padding-right:14px;
 
 `;
